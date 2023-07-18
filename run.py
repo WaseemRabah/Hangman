@@ -1,12 +1,14 @@
 import random
 #import the fruits from words.py.
 from words import fruits
+#import the hangman_stages from stagen.py
+from stages import hangman_stages
 #create random_word that store the chosen word from fruits list.
 random_word = random.choice(fruits).lower()
 print(random_word)
 #we do not want the user to see the word,so we hide it. 
 hidden_word = ['_'] * len(random_word)
-lives = 5
+lives = 6
 #welcome message.
 print("Welcome to Hangman !")
 print(' '.join(hidden_word))
@@ -22,6 +24,7 @@ while not game_over and lives > 0:
                 hidden_word[i] = guessed_letter
     else:
         lives -= 1
+        print(hangman_stages[6 - lives])
 
     print(' '.join(hidden_word))
     print("Lives:", lives)
