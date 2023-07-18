@@ -20,3 +20,10 @@ while not game_over and lives > 0:
         for i in range(len(random_word)):
             if random_word[i] == guessed_letter:
                 hidden_word[i] = guessed_letter
+    else:
+        lives -= 1
+
+    print(' '.join(hidden_word))
+    print("Lives:", lives)
+
+    
