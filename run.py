@@ -1,7 +1,6 @@
 import random
 from words import fruits
 from stages import hangman_stages
-from simple_term_menu import TerminalMenu
 
 
 #create random_word that store the chosen word from fruits list.
@@ -35,3 +34,4 @@ while not game_over and lives > 0:
         print("Game over! You ran out of lives.")
         print("The word was:", random_word)
         game_over = True
+
