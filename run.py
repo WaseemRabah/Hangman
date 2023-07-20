@@ -1,8 +1,9 @@
 import random
-#import the fruits from words.py.
 from words import fruits
-#import the hangman_stages from stagen.py
 from stages import hangman_stages
+from simple_term_menu import TerminalMenu
+
+
 #create random_word that store the chosen word from fruits list.
 random_word = random.choice(fruits).lower()
 print(random_word)
