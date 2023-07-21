@@ -64,3 +64,32 @@ def play_hangman():
             print("The word was:", random_word)
             game_over = True
 
+def main():
+    """
+    The main function that controls the Hangman game's flow.
+
+    1. Enter an infinite loop to keep the game running until the player chooses to quit.
+    2. Display the main menu using the display_menu() function.
+    3. Ask the player to enter their choice (1, 2, or 3) for instructions, play, or quit.
+    4. If the player chooses '1', call the display_instructions() function to show the game instructions.
+    5. If the player chooses '2', call the play_hangman() function to start playing the Hangman game.
+    6. If the player chooses '3', print a farewell message and exit the loop to end the game.
+    7. If the player enters an invalid choice, display an error message and prompt them to choose again.
+    8. Repeat the loop to keep the game running until the player chooses to quit.
+    """
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1, 2, or 3): ")
+        
+        if choice == '1':
+            display_instructions()
+        elif choice == '2':
+            play_hangman()
+        elif choice == '3':
+            print("Goodbye! Thanks for playing.")
+            break
+        else:
+            print("Invalid choice. Please choose again.")
+
+if __name__ == "__main__":
+    main()
