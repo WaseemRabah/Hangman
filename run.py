@@ -41,7 +41,7 @@ def play_hangman():
     print(random_word)
     hidden_word = ['_'] * len(random_word)
     lives = 6
-    print("Welcome to Hangman !")
+    print(Fore.GREEN + "Welcome to Hangman!" + Style.RESET_ALL)
     print(' '.join(hidden_word))
     game_over = False
     while not game_over and lives > 0:
