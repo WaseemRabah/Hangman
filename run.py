@@ -5,10 +5,10 @@ from colorama import Fore, Style
 
 """display the Hangman menu options"""
 def display_menu():
-    print("Hangman Menu :")
-    print("1.Instructions")
-    print("2.Play")
-    print("3.Quit")
+    print(Fore.MAGENTA + "Hangman Menu:")
+    print(Fore.BLUE + "1.Instructions")
+    print(Fore.YELLOW + "2. Play")
+    print(Fore.RED + "3. Quit" + Style.RESET_ALL)
 
 """display hangman instructions"""
 def display_instructions():
