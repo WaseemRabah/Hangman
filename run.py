@@ -1,6 +1,7 @@
 import random
 from words import fruits
 from stages import hangman_stages
+from colorama import Fore, Style
 
 """display the Hangman menu options"""
 def display_menu():
@@ -51,7 +52,7 @@ def play_hangman():
                     hidden_word[i] = guessed_letter
         else:
             lives -= 1
-            print(hangman_stages[6 - lives])
+            print(Fore.RED + "Wrong letter...Try Again" + Style.RESET_ALL)
 
         print(' '.join(hidden_word))
         print("Lives:", lives)
