@@ -41,6 +41,7 @@ def play_hangman():
     print(random_word)
     hidden_word = ['_'] * len(random_word)
     lives = 6
+    stage_index = 0
     print(Fore.GREEN + "Welcome to Hangman!" + Style.RESET_ALL)
     print(' '.join(hidden_word))
     game_over = False
@@ -52,7 +53,9 @@ def play_hangman():
                     hidden_word[i] = guessed_letter
         else:
             lives -= 1
+            stage_index += 1
             print(Fore.RED + "Wrong letter...Try Again" + Style.RESET_ALL)
+            print(hangman_stages[stage_index])
 
         print(' '.join(hidden_word))
         print("Lives:", lives)
