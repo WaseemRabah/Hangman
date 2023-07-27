@@ -17,6 +17,5 @@ fruits = ["Apple",
                 "Raspberry",
                 "Strawberry",
                 "Tangerine",
-                "Ugli fruit",
                 "Watermelon"
 ]
