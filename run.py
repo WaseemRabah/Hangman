@@ -39,15 +39,19 @@ def play_hangman():
     11. Repeat the game loop until the game is over.
     """
     random_word = random.choice(fruits).lower()
-    print(random_word)
     hidden_word = ['_'] * len(random_word)
     lives = 6
     stage_index = 0
     print(Fore.GREEN + "Welcome to Hangman!" + Style.RESET_ALL)
     print(' '.join(hidden_word))
     game_over = False
+    guessed_letters = set()
     while not game_over and lives > 0:
-        guessed_letter = input("guess a letter:\n").lower()
+        guessed_letter = input("Guess a letter: ").lower()
+        if guessed_letter in guessed_letters:
+            print(Fore.YELLOW + f"You have already guessed '{guessed_letter}' and it was incorrect!" + Style.RESET_ALL)
+            continue
+        guessed_letters.add(guessed_letter)
         if guessed_letter in random_word:
             for i in range(len(random_word)):
                 if random_word[i] == guessed_letter:
@@ -57,10 +61,8 @@ def play_hangman():
             stage_index += 1
             print(Fore.RED + "Wrong letter...Try Again" + Style.RESET_ALL)
             print(hangman_stages[stage_index])
-
         print(' '.join(hidden_word))
         print("Lives:", lives)
-
         if '_' not in hidden_word:
             print("Congratulations! You guessed the word correctly!")
             game_over = True
@@ -68,6 +70,7 @@ def play_hangman():
             print("Game over! You ran out of lives.")
             print("The word was:", random_word)
             game_over = True
+
 
 def main():
     """
