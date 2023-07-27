@@ -1,7 +1,8 @@
 import random
+from colorama import Fore, Style
 from words import fruits
 from stages import hangman_stages
-from colorama import Fore, Style
+
 
 """display the Hangman menu options"""
 def display_menu():
