@@ -108,3 +108,6 @@ The flowchart represents the logic of the application:
 
 - *Solutions:* hidden_word = ['_'] * len(random_word)  was duplicated twice so I deleted the duplicate.
 ![Bug](documentation/bug.png)
+
++ **Unsolved bugs**
+- None were found.
