@@ -100,3 +100,11 @@ The flowchart represents the logic of the application:
 
 
 ---
+
+## Bugs
+
++ **Solved bugs**
+1. In the beginning, the problem was that when the user entered the first letter, it was not stored or dealt with, and the hidden word appeared again
+
+- *Solutions:* hidden_word = ['_'] * len(random_word)  was duplicated twice so I deleted the duplicate.
+![Bug](documentation/bug.png)
