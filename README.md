@@ -80,3 +80,23 @@ The flowchart represents the logic of the application:
 - [JavaScript](https://www.javascript.com/): used to provide the start script needed to run the Code Institute mock terminal in the browser
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser
+
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Standard library imports:
+
+- [random](https://docs.python.org/3/library/random.html) was used to implement pseudo-random number generation.
+
+##### Third-party imports:
+
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
+
+#### Other tools:
+
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [heroku.com](https://www.heroku.com/) was used to deploy the project.
+
+
+---
