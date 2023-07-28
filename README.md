@@ -41,3 +41,11 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 * As a frequent visitor, I look forward to unlocking achievements or earning rewards based on my performance, providing additional motivation to keep playing and improving. 
 
 ---
+
+## Features
+
+**Word Guessing Fun**: Enjoy the classic word guessing game where you try to guess the hidden word letter by letter.
+**Random Word Selection**: Each game session features a random word selected from a diverse list of fruits, ensuring a new and exciting challenge every time.
+**Interactive Menu**: A user-friendly menu allows you to easily choose between viewing instructions, starting a new game, or exiting the game.
+**Visual Feedback**: Stay engaged with visual feedback in the form of Hangman stages that appear as you make incorrect guesses.
+**Warning for Repeated Incorrect Guesses**: The game provides a warning message when you repeat an incorrect letter guess, helping you strategize and avoid unnecessary life deductions.
