@@ -35,3 +35,9 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 * As a new player, I hope the game warns me if I repeat an incorrect letter guess, so I can avoid losing lives unnecessarily and improve my chances of winning.
 * As a player experiencing the Hangman game for the first time, I look forward to celebrating my victories and receiving clear messages when I win or lose the game.
 * As a user playing the game for the first time, I expect the game to maintain a fair level of challenge, ensuring that it's not too easy or too difficult to guess the hidden words.
+
+### Frequent Visitor Goals:
+* As a returning player, I expect the game to provide regular updates with new word lists, bug fixes, and feature enhancements, keeping the game fresh and engaging over time.
+* As a frequent visitor, I look forward to unlocking achievements or earning rewards based on my performance, providing additional motivation to keep playing and improving. 
+
+---
