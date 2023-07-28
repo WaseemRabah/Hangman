@@ -22,6 +22,16 @@ The Hangman game is a classic word guessing game where a player tries to guess a
   1. The game continues until the player guesses the entire word or runs out of lives.
   1. If the player successfully guesses the word before running out of lives, they win the game.
   1. If the player runs out of lives before guessing the word, the game ends, and the correct word is revealed.
-  
+
 
 ---
+
+## User Stories
+### First Time Visitor Goals:
+* As a first-time visitor, I want to understand the rules and gameplay of the Hangman game, so I can quickly get started without confusion.
+* As a new player, I want clear instructions on how to guess letters and the consequences of incorrect guesses, so I can strategize and maximize my chances of winning.
+* As a player unfamiliar with the game's words, I hope the game provides a varied and interesting selection of words to guess, making the gameplay engaging and enjoyable.
+* As a user trying out the game for the first time, I expect an intuitive and easy-to-navigate menu that allows me to choose between viewing instructions, playing the game, or quitting.
+* As a new player, I hope the game warns me if I repeat an incorrect letter guess, so I can avoid losing lives unnecessarily and improve my chances of winning.
+* As a player experiencing the Hangman game for the first time, I look forward to celebrating my victories and receiving clear messages when I win or lose the game.
+* As a user playing the game for the first time, I expect the game to maintain a fair level of challenge, ensuring that it's not too easy or too difficult to guess the hidden words.
