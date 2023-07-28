@@ -44,11 +44,22 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 
 ## Features
 
-**Word Guessing Fun**: Enjoy the classic word guessing game where you try to guess the hidden word letter by letter.
-**Random Word Selection**: Each game session features a random word selected from a diverse list of fruits, ensuring a new and exciting challenge every time.
-**Interactive Menu**: A user-friendly menu allows you to easily choose between viewing instructions, starting a new game, or exiting the game.
-**Visual Feedback**: Stay engaged with visual feedback in the form of Hangman stages that appear as you make incorrect guesses.
-**Warning for Repeated Incorrect Guesses**: The game provides a warning message when you repeat an incorrect letter guess, helping you strategize and avoid unnecessary life deductions.
+    - **When the program is loaded**
+
+    The user can see the hangman menu and he can choose from:
+    ![loading Program](documentation/loaded.png)
+
+    **When the user choose instructions.**
+    - The instructions will shows up;
+    ![Instructions](documentation/instructions.png)
+
+    **When the user choose play.**
+    - The game will start;
+    ![Play](documentation/play.png)
+
+    **When the user chose "Quit"**
+    The user will see a goodbye message, and the program will be stopped.
+    ![Quit](documentation/quit.png)
 
 ---
 
@@ -57,3 +68,15 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 The flowchart represents the logic of the application:
 
   ![Flash Card Page](documentation/flowchart.png)
+
+---
+
+## Technologies Used
+
+### Languages:
+
+- [Python 3.11.4](https://www.python.org/downloads/release/python-3114/): used to anchor the project and direct all application behavior
+
+- [JavaScript](https://www.javascript.com/): used to provide the start script needed to run the Code Institute mock terminal in the browser
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser
