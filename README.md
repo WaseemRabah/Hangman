@@ -49,3 +49,11 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 **Interactive Menu**: A user-friendly menu allows you to easily choose between viewing instructions, starting a new game, or exiting the game.
 **Visual Feedback**: Stay engaged with visual feedback in the form of Hangman stages that appear as you make incorrect guesses.
 **Warning for Repeated Incorrect Guesses**: The game provides a warning message when you repeat an incorrect letter guess, helping you strategize and avoid unnecessary life deductions.
+
+---
+
+## Flowchart
+
+The flowchart represents the logic of the application:
+
+  ![Flash Card Page](documentation/flowchart.png)
