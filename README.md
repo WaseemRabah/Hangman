@@ -44,22 +44,22 @@ The Hangman game is a classic word guessing game where a player tries to guess a
 
 ## Features
 
-    - **When the program is loaded**
+ **When the program is loaded**
 
-    The user can see the hangman menu and he can choose from:
-    ![loading Program](documentation/loaded.png)
+The user can see the hangman menu and he can choose from:
+![loading Program](documentation/loaded.png)
 
-    **When the user choose instructions.**
-    - The instructions will shows up;
-    ![Instructions](documentation/instructions.png)
+**When the user choose instructions.**
+- The instructions will shows up;
+![Instructions](documentation/instructions.png)
 
-    **When the user choose play.**
-    - The game will start;
-    ![Play](documentation/play.png)
+**When the user choose play.**
+- The game will start;
+![Play](documentation/play.png)
 
-    **When the user chose "Quit"**
-    The user will see a goodbye message, and the program will be stopped.
-    ![Quit](documentation/quit.png)
+**When the user chose "Quit"**
+The user will see a goodbye message, and the program will be stopped.
+![Quit](documentation/quit.png)
 
 ---
 
