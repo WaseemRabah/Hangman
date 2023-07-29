@@ -13,7 +13,8 @@ def display_menu():
 
 def display_instructions():
     print("Hangman is a word guessing game.")
-    print("A random word will be chosen from fruits list, and you have to guess the letters.")
+    print(f'''A random word will be chosen from the fruits list,
+          and you have to guess the letters.''')
     print("You have 6 lives. Each incorrect guess will cost you a life.")
     print("Guess all the letters in the word to win!")
 
