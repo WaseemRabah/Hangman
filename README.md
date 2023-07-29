@@ -137,3 +137,86 @@ Some errors were found:
 No errors were found:
 
 ![Python Validator](documentation/words.py_validation.png)
+
+---
+
+## Deployment
+
+
+This is a Hangman web application that can be deployed both locally and remotely on Heroku. The game allows users to play Hangman by guessing a word letter by letter.
+
+## Prerequisites
+
+Before deploying the Hangman project, ensure that you have the following installed on your local PC:
+
+- [Python](https://www.python.org/downloads/) (version 3.x)
+- [pip](https://pip.pypa.io/en/stable/installing/) (Python package manager)
+
+## Local Deployment
+
+To deploy the project locally, follow these steps:
+
+1. Clone the repository using either of the methods below:
+   - Download ZIP File:
+     - Go to the [GitHub Repo page](https://github.com/WaseemRabah/Hangman).
+     - Click the "Code" button and download the ZIP file containing the project.
+     - Extract the ZIP file to a location on your PC.
+
+   - Clone the Repository:
+     - Open a terminal or command prompt.
+     - Run the following command:
+       ```
+       git clone https://github.com/WaseemRabah/Hangman.git
+       ```
+2. Navigate to the project directory: cd Hangman
+
+
+3. Install the required modules by running the following command:
+   pip3 install -r requirements.txt
+
+
+4. Run the Hangman application locally:
+   python3 app.py
+
+The Hangman game will be accessible at `http://127.0.0.1:5000/` in your web browser.
+
+
+## Remote Deployment on Heroku
+
+To deploy the project as a remote web application on Heroku, follow these steps:
+
+1. Clone the repository (if you haven't already) by running the following command:
+   git clone https://github.com/WaseemRabah/Hangman.git
+
+
+2. Create your own GitHub repository to host the Hangman project.
+
+3. Set the remote repository location to your newly created GitHub repository:
+   git remote set-url origin <Your GitHub Repo Path>
+
+Replace `<Your GitHub Repo Path>` with the URL of your GitHub repository (e.g., `https://github.com/your-username/your-repo-name.git`).
+
+4. Push the files to your GitHub repository:
+   git push
+
+
+5. Create a Heroku account if you don't have one: [Heroku](https://dashboard.heroku.com).
+
+6. Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) on your local machine.
+
+7. Log in to Heroku through the CLI:
+   heroku login
+
+Enter your Heroku account credentials when prompted.
+
+8. Create a new Heroku application:
+   heroku create <your-app-name>
+  Replace `<your-app-name>` with a unique name for your Heroku application.
+
+9. Deploy the application to Heroku:
+   git push heroku master
+
+This will push the code from your GitHub repository to Heroku and start the deployment process.
+
+10. After a successful deployment, Heroku will provide you with a link to access your Hangman web application. It will look something like: `https://your-app-name.herokuapp.com/`.
+
