@@ -225,6 +225,7 @@ This will push the code from your GitHub repository to Heroku and start the depl
 
 - Color formatting: [Colorama](https://pypi.org/project/colorama/).
 - [heroku.com](https://heroku.com/) for hosting the application.
+- Hangman stages : chirs horton (https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c)
 
 
 ---
