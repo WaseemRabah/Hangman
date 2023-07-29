@@ -220,3 +220,16 @@ This will push the code from your GitHub repository to Heroku and start the depl
 
 10. After a successful deployment, Heroku will provide you with a link to access your Hangman web application. It will look something like: `https://your-app-name.herokuapp.com/`.
 
+---
+## Credits
+
+- Color formatting: [Colorama](https://pypi.org/project/colorama/).
+- [heroku.com](https://heroku.com/) for hosting the application.
+
+
+---
+## Acknowledgements
+
+[Juliia Konovalova](https://github.com/IuliiaKonovalova)
+
+I would like to thank my mentor Juliia Kononalova for her great support during my illness !
