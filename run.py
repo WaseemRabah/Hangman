@@ -23,23 +23,30 @@ def play_hangman():
     """
     Play the Hangman game.
     The function follows these steps:
-    1. Choose a random word from the list of fruits and convert it to lowercase.
+    1. Choose a random word from the list of fruits
+    and convert it to lowercase.
     2. Create a list of underscores to represent the hidden word's letters.
     3. Initialize the number of lives the player has to 6.
     4. Print the welcome message and the initial state of the hidden word.
-    5. Enter the game loop until the game is over or the player runs out of lives.
+    5. Enter the game loop until the game is over or
+    the player runs out of lives.
     6. Ask the player to guess a letter and convert it to lowercase.
     7. Check if the guessed letter has already been guessed incorrectly before.
-       - If it has, display a warning message and ask for another guess (no life deduction).
+       - If it has, display a warning message and
+       ask for another guess (no life deduction).
        - If it hasn't, continue with the normal guessing process.
     8. Check if the guessed letter is in the random word.
-       - If the letter is correct, update the hidden word to reveal the guessed letter's position(s).
-       - If the letter is incorrect, decrease the player's lives and display the corresponding hangman stage.
+       - If the letter is correct, update the hidden word to
+       reveal the guessed letter's position(s).
+       - If the letter is incorrect, decrease the player's lives and
+       display the corresponding hangman stage.
     9. Display the current state of the hidden word and the remaining lives.
-    10. Check if the player has guessed all the letters correctly (no more underscores).
+    10. Check if the player has guessed
+    all the letters correctly (no more underscores).
         - If so, print a victory message and set game_over to True.
     11. Check if the player has run out of lives (lives == 0).
-        - If so, print a game over message along with the correct word, and set game_over to True.
+        - If so, print a game over message along with the correct word,
+        and set game_over to True.
     12. Repeat the game loop until the game is over.
     """
     random_word = random.choice(fruits).lower()
@@ -55,7 +62,8 @@ def play_hangman():
         guessed_letter = input("Guess a letter: ").lower()
 
         if guessed_letter in guessed_letters:
-            print(Fore.YELLOW + f"You have already guessed '{guessed_letter}' and it was incorrect!" + Style.RESET_ALL)
+            print(Fore.YELLOW + f'''You have already guessed '{guessed_letter}'
+            and it was incorrect!''' + Style.RESET_ALL)
             continue
 
         guessed_letters.add(guessed_letter)
@@ -87,14 +95,21 @@ def main():
     """
     The main function that controls the Hangman game's flow.
 
-    1. Enter an infinite loop to keep the game running until the player chooses to quit.
+    1. Enter an infinite loop to keep the game running
+    until the player chooses to quit.
     2. Display the main menu using the display_menu() function.
-    3. Ask the player to enter their choice (1, 2, or 3) for instructions, play, or quit.
-    4. If the player chooses '1', call the display_instructions() function to show the game instructions.
-    5. If the player chooses '2', call the play_hangman() function to start playing the Hangman game.
-    6. If the player chooses '3', print a farewell message and exit the loop to end the game.
-    7. If the player enters an invalid choice, display an error message and prompt them to choose again.
-    8. Repeat the loop to keep the game running until the player chooses to quit.
+    3. Ask the player to enter their choice (1, 2, or 3)
+    for instructions, play, or quit.
+    4. If the player chooses '1', call the display_instructions() function
+    to show the game instructions.
+    5. If the player chooses '2', call the play_hangman() function
+    to start playing the Hangman game.
+    6. If the player chooses '3', print a farewell message
+    and exit the loop to end the game.
+    7. If the player enters an invalid choice,
+    display an error message and prompt them to choose again.
+    8. Repeat the loop to keep the game running
+    until the player chooses to quit.
     """
     while True:
         display_menu()
