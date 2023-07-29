@@ -111,3 +111,29 @@ The flowchart represents the logic of the application:
 
 + **Unsolved bugs**
 - None were found.
+
+---
+
+## Testing
+
+The program was tested constantly during its development process.
+Other users also tested it in order to spot possible grammatical mistakes that the code may present.
+
+### Validators
+
+[CI Python Linter](https://pep8ci.herokuapp.com/) This checking was done manually by copying python code and pasting it into the validator.
+
+- **run.py**
+No errors were found:
+
+![Python Validator](documentation/run.py_validation.png)
+
+- **stages.py**
+Some errors were found:
+
+![Python Validator](documentation/stages_validation.png)
+
+- **words.py**
+No errors were found:
+
+![Python Validator](documentation/words.py_validation.png)
