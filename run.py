@@ -4,24 +4,23 @@ from words import fruits
 from stages import hangman_stages
 
 
-"""display the Hangman menu options"""
 def display_menu():
     print(Fore.MAGENTA + "Hangman Menu:")
-    print(Fore.BLUE + "1.Instructions")
+    print(Fore.BLUE + "1. Instructions")
     print(Fore.YELLOW + "2. Play")
     print(Fore.RED + "3. Quit" + Style.RESET_ALL)
 
-"""display hangman instructions"""
+
 def display_instructions():
     print("Hangman is a word guessing game.")
     print("A random word will be chosen from fruits list, and you have to guess the letters.")
     print("You have 6 lives. Each incorrect guess will cost you a life.")
     print("Guess all the letters in the word to win!")
 
+
 def play_hangman():
     """
     Play the Hangman game.
-
     The function follows these steps:
     1. Choose a random word from the list of fruits and convert it to lowercase.
     2. Create a list of underscores to represent the hidden word's letters.
@@ -50,12 +49,16 @@ def play_hangman():
     print(' '.join(hidden_word))
     game_over = False
     guessed_letters = set()
+
     while not game_over and lives > 0:
         guessed_letter = input("Guess a letter: ").lower()
+
         if guessed_letter in guessed_letters:
             print(Fore.YELLOW + f"You have already guessed '{guessed_letter}' and it was incorrect!" + Style.RESET_ALL)
             continue
+
         guessed_letters.add(guessed_letter)
+
         if guessed_letter in random_word:
             for i in range(len(random_word)):
                 if random_word[i] == guessed_letter:
@@ -65,11 +68,14 @@ def play_hangman():
             stage_index += 1
             print(Fore.RED + "Wrong letter...Try Again" + Style.RESET_ALL)
             print(hangman_stages[stage_index])
+
         print(' '.join(hidden_word))
         print("Lives:", lives)
+
         if '_' not in hidden_word:
             print("Congratulations! You guessed the word correctly!")
             game_over = True
+
         if lives == 0:
             print("Game over! You ran out of lives.")
             print("The word was:", random_word)
@@ -92,7 +98,7 @@ def main():
     while True:
         display_menu()
         choice = input("Enter your choice (1, 2, or 3): ")
-        
+
         if choice == '1':
             display_instructions()
         elif choice == '2':
@@ -102,6 +108,7 @@ def main():
             break
         else:
             print("Invalid choice. Please choose again.")
+
 
 if __name__ == "__main__":
     main()
