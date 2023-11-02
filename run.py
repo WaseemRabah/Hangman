@@ -57,13 +57,28 @@ def play_hangman():
     print(' '.join(hidden_word))
     game_over = False
     guessed_letters = set()
+    correct_letters = set()  # Track correct guesses separately
 
     while not game_over and lives > 0:
         guessed_letter = input("Guess a letter: ").lower()
 
+        if not guessed_letter:
+            print(Fore.YELLOW + "Please enter a letter." + Style.RESET_ALL)
+            continue
+
+        if len(guessed_letter) != 1:
+            print(Fore.YELLOW + "Please enter only one letter." + Style.RESET_ALL)
+            continue
+
+        if not guessed_letter.isalpha():
+            print(Fore.YELLOW + "Please enter a valid letter (a-z)." + Style.RESET_ALL)
+            continue
+
         if guessed_letter in guessed_letters:
-            print(Fore.YELLOW + f'''You have already guessed '{guessed_letter}'
-            and it was incorrect!''' + Style.RESET_ALL)
+            if guessed_letter in correct_letters:
+                print(Fore.YELLOW + f"You have already guessed '{guessed_letter}' and it was correct!" + Style.RESET_ALL)
+            else:
+                print(Fore.YELLOW + f"You have already guessed '{guessed_letter}' and it was incorrect!" + Style.RESET_ALL)
             continue
 
         guessed_letters.add(guessed_letter)
@@ -72,10 +87,12 @@ def play_hangman():
             for i in range(len(random_word)):
                 if random_word[i] == guessed_letter:
                     hidden_word[i] = guessed_letter
+                    correct_letters.add(guessed_letter)  # Add to correct guesses
+
         else:
             lives -= 1
             stage_index += 1
-            print(Fore.RED + "Wrong letter...Try Again" + Style.RESET_ALL)
+            print(Fore.RED + "Wrong letter... Try Again" + Style.RESET_ALL)
             print(hangman_stages[stage_index])
 
         print(' '.join(hidden_word))
@@ -124,7 +141,6 @@ def main():
             break
         else:
             print("Invalid choice. Please choose again.")
-
 
 if __name__ == "__main__":
     main()
