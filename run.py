@@ -5,6 +5,12 @@ from stages import hangman_stages
 
 
 def display_menu():
+    """
+    Display the Hangman menu. The menu options are as follows:
+    1. Instructions in blue color.
+    2. Play in yellow color.
+    3. Quit in red color.
+    """
     print(Fore.MAGENTA + "Hangman Menu:")
     print(Fore.BLUE + "1. Instructions")
     print(Fore.YELLOW + "2. Play")
@@ -12,9 +18,12 @@ def display_menu():
 
 
 def display_instructions():
+    """
+    Display the instructions for the Hangman game.
+    """
     print("Hangman is a word guessing game.")
     print(f'''A random word will be chosen from the fruits list,
-          and you have to guess the letters.''')
+    and you have to guess the letters.''')
     print("You have 6 lives. Each incorrect guess will cost you a life.")
     print("Guess all the letters in the word to win!")
 
@@ -111,7 +120,6 @@ def play_hangman():
 def main():
     """
     The main function that controls the Hangman game's flow.
-
     1. Enter an infinite loop to keep the game running
     until the player chooses to quit.
     2. Display the main menu using the display_menu() function.
